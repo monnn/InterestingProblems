@@ -49,7 +49,6 @@ public class MaximumElement {
             stack.pop();
         } else if (operation.charAt(0) == '3') {
             System.out.println(stack.peek().max);
-//            System.out.println(Collections.max(stack));
         } else {
             try {
                 throw new Exception("operation types are numbers between 1 and 3");

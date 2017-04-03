@@ -38,26 +38,6 @@ public class SparseArrays {
         }
     }
 
-    //returns int, how many times query is present in a string
-    private static int substringSearchByQueryInString(String string, String query) {
-        // search for query in string; increment counter when find
-        int count = 0;
-        for (int i = 0; i < string.length(); i++) {
-            if (string.charAt(i) == query.charAt(0)) {
-                for (int j = 0; j < query.length(); j++) {
-                    if ((i + j) < string.length() && string.charAt(i + j) != query.charAt(j)) {
-                        break;
-                    }
-                    //on last element
-                    if (j == query.length() - 1) {
-                        count++;
-                    }
-                }
-            }
-        }
-        return count;
-    }
-
     private static void print(List<Integer> list) {
         list.stream().forEach(System.out::println);
     }
@@ -76,7 +56,6 @@ public class SparseArrays {
         }
 
         List<Integer> result = search(stringList, queryList);
-        //print result properly
         print(result);
     }
 }
