@@ -19,7 +19,6 @@ function favourites(state = [], action) {
         newState.splice(index, 1);
         return newState;
     case 'CHANGE_ORDER':
-        console.log("current state ", state);
         index = state.indexOf(action.id);
         let newIndex = index + action.value;
         if (index < 0 || newIndex < 0 || state.length <= newIndex) {
@@ -28,7 +27,6 @@ function favourites(state = [], action) {
         newState = [...state];
 
         [newState[index], newState[newIndex]] = [newState[newIndex], newState[index]]
-        console.log("newState " + newState);
         return newState;
     default:
         return state;
@@ -59,7 +57,6 @@ function nonFavourites(state, action) {
 }
 
 function all(state = [], action) {
-    console.log(movies);
     return movies;
 }
 
