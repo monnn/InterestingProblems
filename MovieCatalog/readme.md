@@ -1,5 +1,9 @@
-Install depencencies:
+Install dependencies:
+```
 yarn install
+```
 
-Build:
+Run dev server:
+```
 yarn start
+```
