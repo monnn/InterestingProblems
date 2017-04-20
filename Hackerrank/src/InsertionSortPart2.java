@@ -4,7 +4,7 @@ import java.util.Scanner;
 /**
  * @author Monica Shopova <monica.shopova@gmail.com>
  */
-public class InsertionSort {
+public class InsertionSortPart2 {
 
     private static Integer[] sort(Integer[] elements) {
         for (int i = 0; i < elements.length - 1; i++) {
