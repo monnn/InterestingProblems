@@ -1,0 +1,17 @@
+th {
+    text-align: center;
+}
+
+.poster {
+    margin-right: 15px;
+    margin-bottom: 10px;
+    height: 285px;
+}
+
+.plot-popover {
+    max-width: 400px;
+}
+
+.movie-title, .glyphicon {
+    cursor: pointer;
+}
